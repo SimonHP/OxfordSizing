@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OxfordSizing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvs-q2-6hC">
+                                <rect key="frame" x="86" y="499" width="67" height="34"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="R5a-qV-xeC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="MALE">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="malebutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bwm-ME-89F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWE-NP-bdq">
+                                <rect key="frame" x="247" y="499" width="87" height="34"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Esg-Vs-LG0"/>
+                                    <constraint firstAttribute="width" constant="87" id="a5T-NG-Pg2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="FEMALE">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="femalebutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1L-IR-7Qz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Oxford Sizing APP" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3r-Cw-egv">
+                                <rect key="frame" x="40" y="181" width="334" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rG5-JH-9ni"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Frm-jU-3I5">
+                                <rect key="frame" x="40" y="624" width="294" height="16"/>
+                                <string key="text">please note: check size with both radiograph templating and intraoperative tools as described in Oxford microplasty protocol. Reference for study on height and sex accuracy for sizing in an European poulation see: doi: 10.1016/j.knee.2008.05.011.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter height (m)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-Gd-KTs">
+                                <rect key="frame" x="68" y="387" width="317" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter hight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4h-tP-z3k">
+                                <rect key="frame" x="105" y="569" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="Frm-jU-3I5" firstAttribute="top" secondItem="Mvs-q2-6hC" secondAttribute="bottom" constant="91" id="4S5-hR-CZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dWE-NP-bdq" secondAttribute="trailing" constant="80" id="HrD-Bp-C6l"/>
+                            <constraint firstItem="dWE-NP-bdq" firstAttribute="bottom" secondItem="Mvs-q2-6hC" secondAttribute="bottom" id="MGD-zh-272"/>
+                            <constraint firstItem="Kbd-Gd-KTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="NMq-JY-vGa"/>
+                            <constraint firstItem="p3r-Cw-egv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Pnm-OI-HFN"/>
+                            <constraint firstItem="dWE-NP-bdq" firstAttribute="baseline" secondItem="Mvs-q2-6hC" secondAttribute="baseline" id="UNJ-W5-YXL"/>
+                            <constraint firstItem="Mvs-q2-6hC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="VA4-K7-Kw1"/>
+                            <constraint firstItem="Mvs-q2-6hC" firstAttribute="top" secondItem="Kbd-Gd-KTs" secondAttribute="bottom" constant="78" id="ajs-Ih-VX5"/>
+                            <constraint firstItem="Kbd-Gd-KTs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="387" id="gBL-mj-3Id"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kbd-Gd-KTs" secondAttribute="trailing" constant="29" id="ijz-cM-lBy"/>
+                            <constraint firstItem="p3r-Cw-egv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qqw-0n-Ujk"/>
+                            <constraint firstItem="p3r-Cw-egv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="xUU-kX-Vko"/>
+                            <constraint firstItem="dWE-NP-bdq" firstAttribute="top" secondItem="Mvs-q2-6hC" secondAttribute="top" id="xgR-vF-7tV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hightTextField" destination="D4h-tP-z3k" id="mcw-nk-Mmf"/>
+                        <outlet property="highttextfield" destination="D4h-tP-z3k" id="qxJ-Mf-OPe"/>
+                        <outlet property="warningLabel" destination="Frm-jU-3I5" id="km4-gi-5Ft"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

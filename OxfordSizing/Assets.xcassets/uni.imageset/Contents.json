@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "oxford_partial_knee.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
